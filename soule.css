@@ -1,0 +1,592 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+    font-family:sans-serif;
+    color:#f6f6f6;
+}
+html{
+    font-size:62.5%;
+}
+
+
+
+/*container*/
+
+.container{
+  height:100vh;
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:2em;
+  flex-wrap:wrap;
+  background-color: white;
+  
+}
+
+.cadre1,.cadre2,.cadre3{
+    width:22em;
+    height:42em;
+    background-color:black;;
+    border-radius:5px;
+    border:none;
+    box-shadow:20px 20px 40px rgba(0,0,0,0.5);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position: relative;      
+}
+
+
+/*Login section*/
+
+.title{
+    margin:6em 0 3em 0;
+    color: black;
+}
+
+.title h2{
+    font-size:2rem;
+   
+}
+
+.title p{
+    font-size:0.9rem;
+    text-align:center;
+   
+}
+.rond1{
+    width:5em;
+    height:5em;
+    border-radius:50%;
+    background-color:#f6f6f6;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:2em;
+
+    
+}
+
+.rond11{
+
+   
+    width:3em;
+    height:3em;
+    border-radius:50%;
+    background-color:transparent;
+    border:2px solid #111;
+    position: relative;
+
+}
+
+.rond12{
+    width:0.5em;
+    height:0.5em;
+    border-radius:50%;
+    background-color:#111;
+    position:absolute;
+    left:60%;
+    top:20%;
+}
+
+.rond13{
+    width:0.5em;
+    height:0.5em;
+    border-radius:50%;
+    background-color:#111;
+    position:absolute;
+    right: 60%;
+    top:20%;
+}
+
+.logininput{
+    display:flex;
+    flex-direction:column;
+}
+
+.logininput p{
+    margin-bottom: 0.4em;
+}
+
+.logininput input{
+    background-color:#f6f6f6;
+    color:black;
+    outline:none;
+    border:none;
+    margin-bottom:1em;
+    padding:0.3em 0.4em;
+    border-radius:3px;
+}
+
+::placeholder{
+    color:rgb(211, 208, 208);
+    font-size:.7rem;
+   
+
+}
+
+.signin{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 2em;
+}
+
+.signin button{
+    width:9em;
+    height:2.5em;
+    border:1px solid #f6f6f6;
+    background-color:transparent;
+    color:#b38b59;
+    font-size:1rem;
+    position: relative;
+    
+    border-radius:3px;
+    z-index:1;
+}
+
+.signin span{
+    position:absolute;
+    width:0;
+    height:100%;
+    background-color:#b38b59;
+    border-radius:3px;
+    left:0;
+    top:0;
+    z-index:-1;
+    border:none;
+
+    transition:all 2s ease-in-out;
+    
+}
+
+.signin:hover span{
+    width:100%;
+    
+}
+.signin button:hover{
+    border:none;
+    color: #f6f6f6;
+}
+
+
+.biometric{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+
+.biometric p{
+    font-size:0.9rem;
+    text-align:start;
+}
+
+.biometricRond{
+    height:5em;
+    width:6em;
+    background-color:#f6f6f6;
+    border-radius:100%;
+    background: url(pexels-elviss-railijs-bit%C4%81ns-1389429.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.barNoir{
+    
+    height:0.3em;
+    width:15em;
+    background-color:#f6f6f6;
+    position:absolute;
+    top: 95%;
+}
+
+.question p{
+    margin-top:3em;
+    font-size:1rem;
+}
+
+
+/*SIGN UP SECTION*/
+
+.cadre2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.cadreInput2 input{
+    background-color:#f6f6f6;
+    color:black;
+    outline:none;
+    border:none;
+    margin-bottom:1em;
+    margin-left:1.5em;
+    border-radius:25px;
+
+    padding:0.3em 0.6em;
+}
+.cadreInput2 input::placeholder{
+    color:#111;
+    font-weight:500;
+}
+
+.signin2 button{
+    width:9em;
+    height:2.5em;
+    border:1px solid #f6f6f6;
+    background-color:transparent;
+    color:#b38b59;
+    font-size:1rem;
+    position: relative;
+    
+    border-radius:3px;
+    z-index:1;
+}
+
+.signin2 span{
+    position:absolute;
+    width:0;
+    height:100%;
+    background-color:#b38b59;
+    border-radius:3px;
+    left:0;
+    top:0;
+    z-index:-1;
+    border:none;
+
+    transition:all 2s ease-in-out;
+    
+}
+
+.signin2:hover span{
+    width:100%;
+    
+}
+.signin2 button:hover{
+    border:none;
+    color: #f6f6f6;
+}
+
+
+/*HOME PAGE*/
+
+.titles{
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px
+}
+
+.titles h2{
+    font-size:2rem;
+   
+}
+
+.titles p{
+    font-size:0.9rem;
+    text-align:center;
+   
+}
+
+.navBar{
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    
+
+}
+
+
+.card{
+  width:21em;
+  height:9.5em;
+  position: relative;
+
+  margin-top:2em;
+  color:#111;
+  perspective:1000px;
+
+}
+
+.innerCard{
+    position:relative;
+    height:100%;
+    width:100%;
+
+    transition:all 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.front,.back{
+    position:absolute;
+    background-image:linear-gradient(
+        45deg,
+        green,
+        #fff,
+        green
+    );
+    height:100%;
+    width:100%;
+
+
+    top:0;
+    border-radius:3px;
+    padding:0.5em 1em ;
+    z-index:1;
+    backface-visibility:hidden;
+}
+
+.map img{
+   position:absolute;
+    width:17em;
+    top:0;
+    left:2em;
+    opacity:0.5;
+    z-index:-1;
+}
+
+.lign{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.cardNumber{
+    margin-top:2em;
+    margin-left:0.5em;
+}
+.cardNumber input{
+    background-color:transparent;
+    border: none;
+    width:3em;
+    outline:none;
+    font-size:1rem;
+    font-weight: 800;
+
+}
+
+::placeholder{
+    font-size:1rem;
+    color:#111;
+    font-weight:800;
+}
+.holder{
+    margin-top:1.5em;
+}
+.holder p{
+    font-size:0.5rem;
+    color:#111;
+}
+.holderName{
+   margin-top:-1.5em;
+    display:flex;
+    align-items:center;
+}
+.holderName input{
+    background-color:transparent;
+    border:none;
+    outline:none;
+    color:#111;
+
+    font-size:0.7rem;
+    width:80em;
+    padding:2em 0;
+    font-weight:800;
+}
+.holderName input::placeholder{
+    font-size:0.7rem;
+}
+
+.holderName p{
+    font-size:0.8rem;
+    color: #111;
+    
+}
+
+.barNoire{
+    height:2.5em;
+    background-color:#111;
+    margin:0.5em -1em;
+    
+  
+    
+}
+
+.barCvc img{
+    width:100%;
+}
+.barCvc{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.barCvc p{
+    background-color: azure;
+    color:#111;
+    padding:0.35em;
+    font-size:0.9rem;
+}
+
+.back{
+    transform:rotateY(180deg);
+}
+
+.card:active.innerCard{
+    transform:rotateY(-180deg);
+}
+.signa{
+    margin-top: 2em;
+}
+
+
+.ligne1 p:nth-of-type(2){
+    font-weight:700;
+    font-size:1.5rem;
+}
+.ligne2 p:nth-of-type(2){
+    font-weight:700;
+    font-size:1.5rem;
+}
+
+.section1{
+    display:flex;
+    gap:1.5em;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+.boxe1,.boxe2,.boxe3,.boxe4{
+    width:4em;
+    height:4em;
+    background-color:#f6f6f6;
+   
+    margin-bottom:1em;
+    border-radius:3px;
+    
+}
+
+.boxe1{
+    background: url(wallet-icon-7.png);
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+}
+
+.boxe2{
+ background: url(35366.png);
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+}
+
+.boxe3{
+     background: url(1551540-200.png);
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+}
+
+.boxe4{
+     background: url(82149471-money-bag-vector.webp);
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+}
+.section1 p{
+    font-size:0.8rem;
+    text-align:center;
+}
+
+.account{
+    background-color:#f6f6f6;
+    width:20.5em;
+    height:7.6em;
+    margin-top:1em;
+
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+    padding:2em;
+    gap: 2em;
+    border-radius:3px;
+    
+}
+
+.balance p{
+    color:#111;
+}
+.balance p:nth-of-type(2){
+    font-weight:800;
+    font-size:1.3rem;
+}
+
+.number p{
+    color:#111;
+}
+
+.number p:nth-of-type(2){
+    font-weight:800;
+    font-size:1.3rem;
+}
+
+.transaction{
+    margin-top:1em;
+    display:flex;
+    width:20em;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.transaction p:nth-of-type(1){
+    font-weight:500;
+    font-size:1.3rem;
+}
+
+
+.transaction p:nth-of-type(2){
+    background-color:#f6f6f6;
+    width:7em;
+    padding:0.5em;
+    border-radius:20px;
+    margin-bottom: 0.5em;
+    color: black
+}
+
+.nom{
+  padding:0.5em;
+    width:28em;
+    background-color:#f6f6f6;
+    border-radius:20px;
+    font-size:0.7rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.nom p{
+    text-align:center;
+    color: green;
+    
+}
+.pointNoir{
+    width:1.2em;
+    height:1.2em;
+    background-color:black;
+    border-radius:50%;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    color: red;
+}
+
